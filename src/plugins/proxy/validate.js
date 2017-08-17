@@ -32,7 +32,8 @@ const schema = joi.object().keys({
         NGINX_PROXY_CONTAINER: joi.string()
       })
       .pattern(/[\s\S]*/, [joi.string(), joi.number(), joi.boolean()])
-  })
+  }),
+  htpasswd: joi.string().trim()
 });
 
 export default function(config, {

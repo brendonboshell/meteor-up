@@ -55,6 +55,7 @@ sudo docker run \
   -v /opt/$APPNAME/config/vhost.d:/etc/nginx/vhost.d \
   -v /opt/$APPNAME/config/html:/usr/share/nginx/html \
   -v /opt/$APPNAME/config/nginx-default.conf:/etc/nginx/conf.d/my_proxy.conf:ro \
+  -v /opt/$APPNAME/config/htpasswds:/etc/nginx/htpasswds \
   -v /var/run/docker.sock:/tmp/docker.sock:ro \
   jwilder/nginx-proxy
 echo "Ran nginx-proxy as $APPNAME"

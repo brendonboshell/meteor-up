@@ -1,5 +1,5 @@
 {
-  "name": "mup",
+  "name": "mupwb",
   "version": "1.4.6",
   "description": "Production Quality Meteor Deployments",
   "main": "lib/index.js",
@@ -19,7 +19,7 @@
   },
   "homepage": "http://meteor-up.com/",
   "bin": {
-    "mup": "./index.js"
+    "mupwb": "./index.js"
   },
   "scripts": {
     "prepublish": "npm run build -s",

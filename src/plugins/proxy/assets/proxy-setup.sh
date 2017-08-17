@@ -6,6 +6,7 @@ sudo mkdir -p /opt/<%= name %>/mounted-certs
 sudo mkdir -p /opt/<%= name %>/config
 sudo mkdir -p /opt/<%= name %>/config/vhost.d
 sudo mkdir -p /opt/<%= name %>/config/html
+sudo mkdir -p /opt/<%= name %>/config/htpasswds
 
 sudo touch /opt/<%= name %>/config/shared-config.sh
 sudo touch /opt/<%= name %>/config/env.list

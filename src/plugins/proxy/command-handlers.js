@@ -130,6 +130,16 @@ export function setup(api) {
     });
   }
 
+  if (config.htpasswd) {
+    list.copy('Puhsing htpasswd file', {
+      src: api.resolvePath(api.getBasePath(), config.htpasswd),
+      dest: `/opt/${PROXY_CONTAINER_NAME}/config/htpasswds/.htpasswd`,
+      vars: {
+        appName: PROXY_CONTAINER_NAME
+      }
+    });
+  }
+
   const sessions = api.getSessions(['app']);
 
   return api.runTaskList(list, sessions, {
